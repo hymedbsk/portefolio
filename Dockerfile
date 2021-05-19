@@ -1,5 +1,4 @@
 FROM ubuntu:latest
-
 RUN apt update && apt upgrade -y && DEBIAN_FRONTEND=noninteractive apt install -y apache2 php php-mysql nano 
 RUN a2enmod ssl
 RUN a2enmod rewrite
